@@ -1,0 +1,123 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+     font-size: 100%;
+     background: #FFf;
+    }     
+    
+   
+    h1,h2,h3,h4,h5,h6{
+        margin:0;		
+        font-family: 'Montserrat-Regular';
+        font-weight:700;    
+    }	
+    p{
+        margin:0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    ul{
+        margin:0;
+        padding:0;
+    }
+    label{
+        margin:0;
+    }
+    .top-header {
+        padding: 0em 2em;
+        background: #2d2535;
+    }
+    ul.top-nag {
+        float:left
+    }
+    ul.top-nag li {
+        display:inline-block;
+        margin-right:0;       
+    }
+    ul.top-nag  a{
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: 600;
+        text-transform: uppercase;
+       padding: 20px 20px;
+        background: none;
+        background-color: #a75d82;
+        display: inline-block;
+    }
+    ul.top-nag  a:hover,ul.top-nag  a.active{
+        background-color: #8D6AB3;
+    }
+    ul.top-nag  a.active{
+      color: #ffcc00;
+    }      
+   
+    .top-menu ul {
+        margin-top: 1em;
+        
+    }
+    .top-nav{
+           float: left;
+            background-color: rgb(102, 45, 45);
+            width: 15%;
+             padding: 3em 1em 95.6em 1em;
+               position:absolute;
+    }   
+       
+      
+    .top-menu ul li {
+        display:block;
+        color: #fff;       
+        text-align: left;
+        margin-bottom:2em;        
+    }
+    .top-menu ul li a{
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 1em 1em;
+        background: none;
+        background-color:rgb(70, 22, 22);
+        top: 20px;
+    }        
+
+    .top-menu{
+        position: fixed;
+    }
+    .logo{
+        position: fixed;
+        top: 10px;
+    }
+    .logo  a{
+        display:block;
+    }
+    .logo  a h1{
+          color: rgb(252, 227, 227);
+        font-size: 2.5em;
+        font-weight: 700;
+        text-align: center;
+    }
+    .logo  a h1:hover{
+     text-decoration:none;
+    }
+    .logo  a h1 span{
+     color:#a5cd39;
+    }
+
+
+   
+
+    .footer {
+        text-align: center;
+        background:#222;
+        padding: 1em;
+        position: fixed;
+        bottom: 0px;
+        height: 35px;
+        width: 100%;
+        }
+        .footer p {
+        color: #fff;
+        font-size: 0.9em;
+        }
+        .footer p a {
+        color: #F26649;
+        }
