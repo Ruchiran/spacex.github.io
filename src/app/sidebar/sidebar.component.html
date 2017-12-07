@@ -8,12 +8,12 @@
     <div class="top-menu">
       <ul class="cl-effect-16">
         <li>
-          <a  class="list-group-item">
+            <a [routerLink]="['/home']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="glyphicon glyphicon-credit-card"></i>&nbsp;{{ 'Basic Data' }}
           </a>
         </li>
         <li>
-          <a  class="list-group-item">
+            <a [routerLink]="['/vehicle']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="glyphicon glyphicon-credit-card"></i>&nbsp;{{ 'vehicle' }}
           </a>
         </li>

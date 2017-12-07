@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { routing } from './app.routing';
 
 
 @NgModule({
@@ -12,9 +14,11 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     SidebarComponent,
     HomeComponent,
+    VehicleComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
