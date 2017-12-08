@@ -7,6 +7,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { routing } from './app.routing';
+import { HomeService } from './home.service';
+import { LaunchService } from './launch.service';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -18,9 +21,10 @@ import { routing } from './app.routing';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
-  providers: [],
+  providers: [HomeService, LaunchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
