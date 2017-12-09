@@ -11,4 +11,8 @@ export class HomeService {
     return this.http.get('https://api.spacexdata.com/v2/info')
       .map((res: Response) => res.json());
   }
+  getlatest() {
+    return this.http.get('https://api.spacexdata.com/v2/launches/latest')
+      .map((res: Response) => res.json());
+  }
 }

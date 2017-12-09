@@ -12,12 +12,19 @@ export class HomeComponent implements OnInit {
 
   }
   info = {
+    name: '',
+    founder: '',
+    founded: '',
+    employees:''
   };
+  latest= {};
 
   ngOnInit() {
     this.homeService.getinfo().subscribe(data => this.info = data);
-    console.log(this.info);
+    this.homeService.getlatest().subscribe(data => this.latest = data);
   }
 
-
+  test(){
+    console.log(this.latest);
+  }
 }

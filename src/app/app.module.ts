@@ -10,6 +10,7 @@ import { routing } from './app.routing';
 import { HomeService } from './home.service';
 import { LaunchService } from './launch.service';
 import { HttpModule } from '@angular/http';
+import { VehicleService } from './vehicle.service';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { HttpModule } from '@angular/http';
     routing,
     HttpModule
   ],
-  providers: [HomeService, LaunchService],
+  providers: [HomeService, LaunchService, VehicleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

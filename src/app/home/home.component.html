@@ -1,4 +1,4 @@
-
+<app-sidebar></app-sidebar>
 <body>
   <div>
     <div class="row">
@@ -15,27 +15,31 @@
 
                 <tbody>
                   <tr>
-                    <td>Name</td>
+                    <td>Name :</td>
                     <td>
-                      <input name="name"> </td>                    
+                     {{info.name}} </td>                    
                   </tr>
                   <tr>
-                    <td>Founder</td>
+                    <td>Founder :</td>
                     <td>
-                      <input name="name"> </td>                    
+                      {{info.founder}} </td>                    
                   </tr>
                   <tr>
-                    <td>Founded</td>
+                    <td>Founded :</td>
                     <td>
-                      <input name="name"> </td>                    
+                        {{info.founded}} </td>                    
                   </tr>
                   <tr>
-                    <td>Employees</td>
+                    <td>Employees: </td>
                     <td>
-                      <input name="name"> </td>                    
+                        {{info.employees}} </td>                    
                   </tr>
                   <tr>
                     <td>
+                      Summary :
+                    </td>
+                    <td>
+                      {{info.summary}}
                     </td>
                   </tr>
                 </tbody>
@@ -48,32 +52,40 @@
                 </thead>
 
                 <tbody>
+                    <tr>
+                        <td>pic :</td>
+                        <td>
+                            <img src='{{latest.links.mission_patch}}'> </td>                    
+                      </tr>
                   <tr>
-                    <td>Flight Number</td>
+                    <td>Flight Number :</td>
                     <td>
-                      <input name="name"> </td>                    
+                     {{latest.flight_number}} </td>                    
                   </tr>
                   <tr>
                     <td>Launched year</td>
                     <td>
-                      <input name="name"> </td>                    
+                        {{latest.launch_year}} </td>                    
                   </tr>
                   <tr>
-                    <td>Rocket details</td>
+                    <td>Rocket details: </td>
                     <td>
-                      <input name="name"> </td>                    
+                     <i><a>Name :</a></i>  {{latest.rocket.rocket_name}}</td>                    
                   </tr>
                   <tr>
-                    <td>Reuse</td>
+                    <td>launch Date UTC :
+                      </td>
                     <td>
-                      <input name="name"> </td>                    
+                        {{latest.launch_date_utc}} </td>                    
                   </tr>
                   <tr>
-                    <td>Employees</td>
+                    <td>Details :</td>
                     <td>
-                      <input name="name"> </td>                    
+                        {{latest.details}} </td>                    
                   </tr>
+                 
                   <tr>
+                      <button (click)="test()"> TEST</button>
                     <td>
                     </td>
                   </tr>
