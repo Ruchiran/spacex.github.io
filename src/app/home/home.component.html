@@ -3,7 +3,7 @@
   <div>
     <div class="row">
       <div class="col-lg-12">
-        <div class="panel panel-default">
+        
           <div class="panel-heading">
             <h3>Basic Data</h3>
           </div>
@@ -14,29 +14,29 @@
 
                 <tbody>
                   <tr>
-                    <td>Name :</td>
+                    <li>Name :</li>
                     <td>
                      {{info.name}} </td>                    
                   </tr>
                   <tr>
-                    <td>Founder :</td>
+                   <li>Founder</li>
                     <td>
                       {{info.founder}} </td>                    
                   </tr>
                   <tr>
-                    <td>Founded :</td>
+                   <li>Founded</li>
                     <td>
-                        {{info.founded}} </td>                    
+                       {{info.founded}} </td>                    
                   </tr>
                   <tr>
-                    <td>Employees: </td>
+                   <li>Employees:</li>
                     <td>
                         {{info.employees}} </td>                    
                   </tr>
-                  <tr>
-                    <td>
-                      Summary :
-                    </td>
+                  <tr><li>
+                    
+                      Summary :</li>
+                   
                     <td>
                       {{info.summary}}
                     </td>
@@ -52,22 +52,21 @@
 
                 <tbody>
                     <tr>
-                        <td>pic :</td>
                         <td>
                             <img src='{{latest.links.mission_patch}}'> </td>                    
                       </tr>
                   <tr>
-                    <td>Flight Number :</td>
+                    <li>Flight Number :</li>
                     <td>
                      {{latest.flight_number}} </td>                    
                   </tr>
                   <tr>
-                    <td>Launched year</td>
+                    <li>Launched year</li>
                     <td>
                         {{latest.launch_year}} </td>                    
                   </tr>
                   <tr>
-                    <td>Rocket details: </td>
+                    <li>Rocket details: </li>
                     <td>
                      <a (click)="showRocket()" ><i>Name : </i>{{latest.rocket.rocket_name}} </a> </td>
                                  
@@ -78,13 +77,13 @@
                     <td></td>    
                    </tr>   
                   <tr>
-                    <td>launch Date UTC :
-                      </td>
+                    <li>launch Date UTC :
+                    </li>
                     <td>
                         {{latest.launch_date_utc}} </td>                    
                   </tr>
                   <tr>
-                    <td>Details :</td>
+                    <li>Details :</li>
                     <td>
                         {{latest.details}} </td>                    
                   </tr>
@@ -98,7 +97,7 @@
               </table>
             </div>
           </div>
-        </div>
+       
       </div>
     </div>
   </div>

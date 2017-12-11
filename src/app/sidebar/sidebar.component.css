@@ -8,7 +8,9 @@ body{
     h1,h2,h3,h4,h5,h6{
         margin:0;		
         font-family: 'Montserrat-Regular';
-        font-weight:700;    
+        font-weight:700;  
+        color: rgb(252, 252, 252) ;
+     
     }	
     p{
         margin:0;
@@ -16,14 +18,14 @@ body{
     }
     ul{
         margin:0;
-        padding:0;
+        padding:10px;
     }
     label{
         margin:0;
     }
     .top-header {
-        padding: 0em 2em;
-        background: #2d2535;
+        padding: 0em 0em;
+        background: #f2f1f3;
     }
     ul.top-nag {
         float:left
@@ -57,25 +59,25 @@ body{
            float: left;
             background-color: rgb(102, 45, 45);
             width: 15%;
-             padding: 3em 1em 95.6em 1em;
+             padding: 5em 1em 95.6em 1em;
                position:fixed;
     }   
        
       
     .top-menu ul li {
         display:block;
-        color: #fff;       
-        text-align: left;
+        color: rgb(143, 46, 46);       
+        text-align: justify;
         margin-bottom:2em;        
     }
     .top-menu ul li a{
-        color: #fff;
+        color: rgb(252, 253, 186);
         font-size: 0.9em;
         font-weight: 600;
         text-transform: uppercase;
-        padding: 1em 1em;
+        padding: 5px;
         background: none;
-        background-color:rgb(70, 22, 22);
+        background-color:rgb(109, 48, 48);
         top: 20px;
     }        
 
@@ -119,5 +121,12 @@ body{
         font-size: 0.9em;
         }
         .footer p a {
-        color: #F26649;
+        color: rgb(26, 22, 21);
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+           
         }

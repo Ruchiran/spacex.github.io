@@ -1,24 +1,28 @@
 body {    
     position: absolute;
     z-index: 1000;
-    top: 80px;
-    left: 400px;
-    right: 50px;  
+    left: 250px;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    background-color: rgb(233, 232, 232);
 }
-panel-heading{
-font: Monospace;
-    } 
-  
+  a{
+    color: rgb(0, 2, 128)
+  }
   a:hover {
       text-decoration: underline;
+      color: green
   }
   
   img {
+    
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
-}
+    width: 100px;
+  }
   div.dataTables_length label {
   font-weight: normal;
   text-align: left;
@@ -202,7 +206,7 @@ font: Monospace;
   }
   
   ul.DTTT_dropdown.dropdown-menu li {
-  position: relative;
+  position: fixed;
   }
   
   ul.DTTT_dropdown.dropdown-menu li:hover a {
@@ -478,4 +482,22 @@ font: Monospace;
   border: 2px solid white;
   outline: none;
   }
-  
+  td{
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    
+    padding-left: 20px;
+  }
+  tr{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+ h3{
+  font-family: "Helvetica Neue";
+	font-size: 19px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 700;
+ }
