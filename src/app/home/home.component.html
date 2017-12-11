@@ -68,14 +68,24 @@
                   <tr>
                     <li>Rocket details: </li>
                     <td>
-                     <a (click)="showRocket()" ><i>Name : </i>{{latest.rocket.rocket_name}} </a> </td>
+                     <a (click)="showRocket()" ><b>Name : </b>{{latest.rocket.rocket_name}} </a> </td>
                                  
                   </tr>
                   <tr>
                     <td></td>    
-                    <td *ngIf="showSelected"><i>Rocket ID : </i>{{latest.rocket.rocket_id}} <br> <i>Rocket Type : </i>{{latest.rocket.rocket_type}}</td> 
+                    <td *ngIf="showSelectedRocket"><b>Rocket ID : </b>{{latest.rocket.rocket_id}} <br> <b>Rocket Type : </b>{{latest.rocket.rocket_type}}</td> 
                     <td></td>    
                    </tr>   
+                   <tr>
+                    <li>Launch pad details: </li>
+                    <td>
+                     <a (click)="showsite()" ><b>Site Name : </b>{{latest.launch_site.site_name}} </a> </td>
+                                 
+                  </tr>
+                  <tr>
+                    <td></td>    
+                    <td *ngIf="showSelectedSite"><b>Site ID : </b>{{latest.launch_site.site_id}} <br> <b>Site full name : </b>{{latest.launch_site.site_name_long}}</td> 
+                    <td></td>  
                   <tr>
                     <li>launch Date UTC :
                     </li>

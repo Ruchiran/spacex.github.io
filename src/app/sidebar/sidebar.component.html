@@ -18,12 +18,12 @@
           </a>
         </li>
         <li>
-          <a  class="list-group-item">
+          <a [routerLink]="['/launchpad']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="glyphicon glyphicon-th"></i>&nbsp;{{ 'Launch pad' }}
           </a>
         </li>
         <li>
-          <a class="list-group-item">
+          <a [routerLink]="['/launches']" [routerLinkActive]="['router-link-active']"  class="list-group-item">
             <i class="glyphicon glyphicon-credit-card"></i>&nbsp;{{ 'Launches' }}
           </a>
         </li>

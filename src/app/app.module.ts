@@ -11,6 +11,8 @@ import { HomeService } from './home.service';
 import { LaunchService } from './launch.service';
 import { HttpModule } from '@angular/http';
 import { VehicleService } from './vehicle.service';
+import { LaunchpadComponent } from './launchpad/launchpad.component';
+import { LaunchesComponent } from './launches/launches.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { VehicleService } from './vehicle.service';
     SidebarComponent,
     HomeComponent,
     VehicleComponent,
+    LaunchpadComponent,
+    LaunchesComponent,
   ],
   imports: [
     BrowserModule,

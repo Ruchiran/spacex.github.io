@@ -7,7 +7,8 @@ import { HomeService } from '../home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  showSelected: boolean;
+  showSelectedSite: boolean;
+  showSelectedRocket: boolean;
 
   constructor(private homeService: HomeService) {
   }
@@ -20,7 +21,8 @@ export class HomeComponent implements OnInit {
   latest = {};
 
   ngOnInit() {
-    this.showSelected = false;
+    this.showSelectedRocket = false ;
+     this.showSelectedSite = false;
     this.homeService.getinfo().subscribe(data => this.info = data);
     this.homeService.getlatest().subscribe(data => this.latest = data);
   }
@@ -29,10 +31,17 @@ export class HomeComponent implements OnInit {
     console.log(this.latest);
   }
   showRocket() {
-    if (this.showSelected === false) {
-    this.showSelected = true;
+    if (this.showSelectedRocket === false) {
+    this.showSelectedRocket = true;
     }else{
-      this.showSelected = false;
+      this.showSelectedRocket = false;
     }
+  }
+    showsite() {
+      if (this.showSelectedSite === false) {
+      this.showSelectedSite = true;
+      }else{
+        this.showSelectedSite = false;
+      }
   }
 }

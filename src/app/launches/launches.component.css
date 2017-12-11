@@ -2,19 +2,19 @@ body {
     position: absolute;
     z-index: 1000;
     left: 250px;
+    width: 300px;
     padding-top: 25px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-    background-color: rgb(219, 219, 219);
-}
+    background-color: rgb(233, 232, 232);
+  }
   a{
     color: rgb(0, 2, 128)
   }
   a:hover {
       text-decoration: underline;
-      color: rgb(100, 111, 160);
-      cursor: pointer;
+      color: green
   }
   
   img {
@@ -495,10 +495,10 @@ body {
     padding-bottom: 0px;
     padding-left: 0px;
   }
- h3{
+  h3{
   font-family: "Helvetica Neue";
-	font-size: 19px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 700;
- }
+  font-size: 19px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  }
