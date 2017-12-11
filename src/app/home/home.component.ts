@@ -7,24 +7,32 @@ import { HomeService } from '../home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  showSelected: boolean;
 
   constructor(private homeService: HomeService) {
-
   }
   info = {
     name: '',
     founder: '',
     founded: '',
-    employees:''
+    employees: ''
   };
-  latest= {};
+  latest = {};
 
   ngOnInit() {
+    this.showSelected = false;
     this.homeService.getinfo().subscribe(data => this.info = data);
     this.homeService.getlatest().subscribe(data => this.latest = data);
   }
 
-  test(){
+  test() {
     console.log(this.latest);
+  }
+  showRocket() {
+    if (this.showSelected === false) {
+    this.showSelected = true;
+    }else{
+      this.showSelected = false;
+    }
   }
 }

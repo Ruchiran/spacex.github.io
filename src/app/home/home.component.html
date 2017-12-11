@@ -10,8 +10,7 @@
           <div class="panel-body">
             <div class="dataTable_wrapper">
               <table class="table table-striped table-bordered table-hover">
-                <thead>
-                </thead>
+               
 
                 <tbody>
                   <tr>
@@ -70,8 +69,14 @@
                   <tr>
                     <td>Rocket details: </td>
                     <td>
-                     <i><a>Name :</a></i>  {{latest.rocket.rocket_name}}</td>                    
+                     <a (click)="showRocket()" ><i>Name : </i>{{latest.rocket.rocket_name}} </a> </td>
+                                 
                   </tr>
+                  <tr>
+                    <td></td>    
+                    <td *ngIf="showSelected"><i>Rocket ID : </i>{{latest.rocket.rocket_id}} <br> <i>Rocket Type : </i>{{latest.rocket.rocket_type}}</td> 
+                    <td></td>    
+                   </tr>   
                   <tr>
                     <td>launch Date UTC :
                       </td>

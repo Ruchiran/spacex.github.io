@@ -1,9 +1,16 @@
 body {    
-    position: relative;
+    position: absolute;
     z-index: 1000;
     top: 80px;
     left: 400px;
-    right: 50px;   
+    right: 50px;  
+}
+panel-heading{
+font: Monospace;
+    } 
+  
+  a:hover {
+      text-decoration: underline;
   }
   
   img {
