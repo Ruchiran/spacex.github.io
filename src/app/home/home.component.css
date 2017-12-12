@@ -1,12 +1,12 @@
 body {    
     position: absolute;
     z-index: 1000;
-    left: 250px;
+    left: 200px;
     padding-top: 25px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(243, 241, 241);
 }
   a{
     color: rgb(0, 2, 128)
@@ -449,7 +449,7 @@ body {
   .onoffswitch-inner:after {
   content: "OFF";
   padding-right: 10px;
-  background-color: #EEEEEE; color: #999999;
+  background-color: #EEEEEE; color: #f1f1f1;
   text-align: right;
   }
   .onoffswitch-switch {
@@ -483,7 +483,7 @@ body {
   border: 2px solid white;
   outline: none;
   }
-  td{
+  /* td{
     font-family: Helvetica, sans-serif;
     font-variant: small-caps;
     
@@ -501,4 +501,4 @@ body {
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 700;
- }
+ } */

@@ -1,50 +1,49 @@
 <app-sidebar></app-sidebar>
 <body>
-    <div>
+  <div>
       <div class="row">
-        <div class="col-lg-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3>Basic Data</h3>
-            </div>
-            <div class="panel-body">
-              <div class="dataTable_wrapper">
-                <table class="table table-striped table-bordered table-hover">
-                  <thead>
-                  </thead>
-  
-                  <tbody>
-                    <tr>
-                      <td>Name</td>
-                      <td>
-                       dfsfsdf </td>                   
-                    </tr>
-                    <tr>
-                      <td>Founder</td>
-                      <td>
-                        sdfsdfsfds </td>                    
-                    </tr>
-                    <tr>
-                      <td>Founded</td>
-                      <td>
-                        <input name="name"> </td>                    
-                    </tr>
-                    <tr>
-                      <td>Employees</td>
-                      <td>
-                        <input name="name"> </td>                    
-                    </tr>
-                    <tr>
-                      <td>
-                          <button (click)="test()"> TEST</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="col-lg-12">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3>Launchpad</h3>
+                  </div>
+                  <div class="panel-body">
+                      <div class="dataTable_wrapper">
+                          <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                  <tr>
+                                      <th>Flight number</th>
+                                      <th>Launch date </th>
+                                      <th>Rocket name</th>
+                                      <th>Launch site</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let launchDetails of launchDetails" class="odd gradeX">
+                                      <!-- <td [routerLink]="['/details/action',action.id]">
+                                          <span> {{action.name}} </span>
+                                      </td> -->
+                                      <td>
+                                          <span>{{launchDetails.flight_number}}</span>
+                                      </td>
+                                      <td>
+                                          <span>{{launchDetails.launch_date_utc}}</span>
+                                      </td>
+                                      <td>
+                                          <span>{{launchDetails.rocket.rocket_name}}</span>
+                                      </td>
+                                      <td>
+                                        <span>{{launchDetails.launch_site.site_name}}</span>
+                                    </td>
+                                  </tr>   
+                                   <button (click)="test()"> TEST</button>
+                    
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
-  </body>
+  </div>
+</body>

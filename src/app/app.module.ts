@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { AlertModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
@@ -27,7 +27,8 @@ import { LaunchesComponent } from './launches/launches.component';
   imports: [
     BrowserModule,
     routing,
-    HttpModule
+    HttpModule,
+    AlertModule.forRoot(),
   ],
   providers: [HomeService, LaunchService, VehicleService],
   bootstrap: [AppComponent]
