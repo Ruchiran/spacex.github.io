@@ -8,6 +8,7 @@ const appRoutes: Routes = [
     { path: 'vehicle', component: VehicleComponent },
     { path: 'home', component: HomeComponent },
     { path: 'launchpad', component: LaunchpadComponent },
-    { path: 'launches', component: LaunchesComponent }
+    { path: 'launches', component: LaunchesComponent },
+    { path: '**', component: HomeComponent },
 ];
 export const routing = RouterModule.forRoot(appRoutes);
