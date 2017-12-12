@@ -18,10 +18,10 @@ export class VehicleComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.vehicleService.getvehicle().subscribe(data => this.vehicle = data);
+    this.vehicleService.getallvehicle().subscribe(data => this.vehicle = data);
 
   }
   test() {
-    console.log(this.vehicle[0].id);
+    console.log(this.vehicle[0]);
   }
 }

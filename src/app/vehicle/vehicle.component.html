@@ -19,10 +19,7 @@
                               </thead>
                               <tbody>
                                   <tr *ngFor="let vehicle of vehicle" class="odd gradeX">
-                                      <!-- <td [routerLink]="['/details/action',action.id]">
-                                          <span> {{action.name}} </span>
-                                      </td> -->
-                                      <td>
+                                       <td [routerLink]="['/vehicle',vehicle.id]">
                                           <span>{{vehicle.id}}</span>
                                       </td>
                                       <td>
@@ -32,6 +29,7 @@
                                           <span>{{vehicle.type}}</span>
                                       </td>
                                   </tr>        
+                                  <button (click)="test()"> TEST</button>
                               </tbody>
                           </table>
                       </div>

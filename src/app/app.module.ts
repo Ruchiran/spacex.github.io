@@ -13,6 +13,8 @@ import { HttpModule } from '@angular/http';
 import { VehicleService } from './vehicle.service';
 import { LaunchpadComponent } from './launchpad/launchpad.component';
 import { LaunchesComponent } from './launches/launches.component';
+import { LaunchDetailsComponent } from './launch-details/launch-details.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { LaunchesComponent } from './launches/launches.component';
     VehicleComponent,
     LaunchpadComponent,
     LaunchesComponent,
+    LaunchDetailsComponent,
+    VehicleDetailsComponent,
   ],
   imports: [
     BrowserModule,
