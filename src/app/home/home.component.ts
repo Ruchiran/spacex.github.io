@@ -26,10 +26,6 @@ export class HomeComponent implements OnInit {
     this.homeService.getinfo().subscribe(data => this.info = data);
     this.homeService.getlatest().subscribe(data => this.latest = data);
   }
-
-  test() {
-    console.log(this.latest);
-  }
   showRocket() {
     if (this.showSelectedRocket === false) {
     this.showSelectedRocket = true;

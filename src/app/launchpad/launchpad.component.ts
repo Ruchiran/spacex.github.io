@@ -15,10 +15,7 @@ export class LaunchpadComponent implements OnInit {
     private launchService: LaunchService) { }
 
   ngOnInit() {
-    this.launchService.getLaunchpad().subscribe(data => this.launchpad = data);
+    this.launchService.getAllLaunchpad().subscribe(data => this.launchpad = data);
 
-  }
-  test() {
-    console.log(this.launchpad[2]);
   }
 }

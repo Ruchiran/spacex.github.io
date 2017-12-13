@@ -19,10 +19,8 @@
                               </thead>
                               <tbody>
                                   <tr *ngFor="let launchpad of launchpad" class="odd gradeX">
-                                      <!-- <td [routerLink]="['/details/action',action.id]">
-                                          <span> {{action.name}} </span>
-                                      </td> -->
-                                      <td>
+                                
+                                      <td [routerLink]="['/launchpad',launchpad.id]">
                                           <span>{{launchpad.id}}</span>
                                       </td>
                                       <td>
@@ -31,9 +29,7 @@
                                       <td>
                                           <span>{{launchpad.status}}</span>
                                       </td>
-                                  </tr>   
-                                   <button (click)="test()"> TEST</button>
-                    
+                                  </tr>
                               </tbody>
                           </table>
                       </div>

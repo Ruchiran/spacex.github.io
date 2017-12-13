@@ -4,14 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { LaunchpadComponent } from './launchpad/launchpad.component';
 import { LaunchesComponent } from './launches/launches.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { LaunchDetailsComponent } from './launch-details/launch-details.component';
 
 const appRoutes: Routes = [
     { path: 'vehicle', component: VehicleComponent },
     { path: 'home', component: HomeComponent },
     { path: 'launchpad', component: LaunchpadComponent },
     { path: 'launches', component: LaunchesComponent },
-    { path: 'vehicle/:id', component: VehicleDetailsComponent},
+    { path: 'vehicle/:id', component: VehicleDetailsComponent },
+    { path: 'launchpad/:id', component: LaunchDetailsComponent },
     { path: '**', component: HomeComponent }
-    
 ];
 export const routing = RouterModule.forRoot(appRoutes);

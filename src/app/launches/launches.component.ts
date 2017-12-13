@@ -16,7 +16,4 @@ launchDetails = [];
   ngOnInit() {
     this.launchService.getAllLaunch().subscribe(data => this.launchDetails = data);
   }
-  test() {
-    console.log(this.launchDetails[2]);
-  }
 }

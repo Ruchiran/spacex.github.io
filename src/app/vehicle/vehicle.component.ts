@@ -21,7 +21,4 @@ export class VehicleComponent implements OnInit {
     this.vehicleService.getallvehicle().subscribe(data => this.vehicle = data);
 
   }
-  test() {
-    console.log(this.vehicle[0]);
-  }
 }

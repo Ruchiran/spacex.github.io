@@ -29,15 +29,14 @@
                                       <td>
                                           <span>{{launchDetails.launch_date_utc}}</span>
                                       </td>
-                                      <td>
+                                      <td [routerLink]="['/vehicle',launchDetails.rocket.rocket_id]">
                                           <span>{{launchDetails.rocket.rocket_name}}</span>
                                       </td>
-                                      <td>
+                                      <td [routerLink]="['/launchpad',launchDetails.launch_site.site_id]">
                                         <span>{{launchDetails.launch_site.site_name}}</span>
                                     </td>
                                   </tr>   
-                                   <button (click)="test()"> TEST</button>
-                    
+                                
                               </tbody>
                           </table>
                       </div>

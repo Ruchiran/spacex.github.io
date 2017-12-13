@@ -1,3 +1,59 @@
-<p>
-  launch-details works!
-</p>
+<app-sidebar></app-sidebar>
+
+<body>
+  <div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel-heading">
+          <h3>{{launchpad.full_name}} Details</h3>
+        </div>
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+          </thead>
+
+          <tbody>
+            <tr>
+              ID :
+              <td>
+                {{launchpad.id}} </td>
+            </tr>
+            <tr>
+              Status
+              <td>
+                {{launchpad.status}} </td>
+            </tr>
+            <tr>
+              Location Name:
+              <td>
+                {{launchpad.location.name}} </td>
+            </tr>
+            <tr>
+             Location Region:
+              <td>
+                {{launchpad.location.region}} </td>
+            </tr>
+            <tr>
+              Location latitude and Longitude:
+              <td>
+                {{launchpad.location.latitude}} - <i>latitude</i> <br>  {{launchpad.location.longitude}} - <i>longitude</i> </td>
+            </tr>
+            <tr>
+             Vehilce Launched:
+              <td>
+                {{launchpad.vehicles_launched}} </td>
+            </tr>
+            <tr>
+              Details: 
+              <td>
+                {{launchpad.details}} </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
