@@ -10,7 +10,28 @@ import { VehicleService } from '../vehicle.service';
 export class VehicleDetailsComponent implements OnInit {
   currentRoute: any;
   vehicle = {
-    id: ''
+    id: '',
+    name: '',
+    type: '',
+    active: '',
+    stages: '',
+    boosters: '',
+    cost_per_launch: '',
+    success_rate_pct: '',
+    company: '',
+    country: '',
+    height: {
+      meters: '',
+      feet: ''
+    },
+    diameter: {
+      meters: '',
+      feet: ''
+    },
+    mass: {
+      kg: '',
+      lb: ''
+    }
   };
 
   constructor(private router: Router,

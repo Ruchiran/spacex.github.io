@@ -10,6 +10,17 @@ import { LaunchService } from '../launch.service';
 export class LaunchDetailsComponent implements OnInit {
   currentRoute: any;
   launchpad = {
+    full_name: '',
+    id: '',
+    status: '',
+    location: {
+      name: '',
+      region: '',
+      latitude: '',
+      longitude: ''
+    },
+    vehicles_launched: '',
+    details: ''
   };
 
   constructor(private router: Router,

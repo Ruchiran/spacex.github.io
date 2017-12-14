@@ -16,9 +16,26 @@ export class HomeComponent implements OnInit {
     name: '',
     founder: '',
     founded: '',
-    employees: ''
+    employees: '',
+    summary: ''
   };
-  latest = {};
+  latest = {
+    links: {
+      mission_patch: ''
+    },
+    flight_number: '',
+    launch_year: '',
+    rocket: {
+      rocket_id: '',
+      rocket_name: ''
+    },
+    launch_site: {
+      site_name: ''
+    },
+    launch_date_utc: '',
+    details: ''
+   
+  };
 
   ngOnInit() {
     this.showSelectedRocket = false ;
