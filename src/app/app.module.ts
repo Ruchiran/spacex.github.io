@@ -15,6 +15,7 @@ import { LaunchpadComponent } from './launchpad/launchpad.component';
 import { LaunchesComponent } from './launches/launches.component';
 import { LaunchDetailsComponent } from './launch-details/launch-details.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     LaunchesComponent,
     LaunchDetailsComponent,
     VehicleDetailsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
