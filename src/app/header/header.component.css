@@ -195,20 +195,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
 
-#footer
-{ width: 898px;
-  font: normal 100% 'lucida sans unicode', arial, sans-serif;
-  height: 33px;
-  padding: 24px 0 5px 0;
-  text-align: center; 
-  background: transparent;
-  color: #FFF;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;}
 
-#footer a
-{ color: #FFF;
-  text-decoration: none;}
 
 #footer a:hover
 { color: #FFF;
