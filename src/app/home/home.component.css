@@ -6,7 +6,7 @@ body {
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-    background-color: rgb(243, 241, 241);
+    background-color: rgb(240, 235, 235);
 }
   a{
     color: rgb(0, 2, 128)
@@ -495,10 +495,12 @@ body {
     padding-bottom: 0px;
     padding-left: 0px;
   }
+  */
+  
  h3{
-  font-family: "Helvetica Neue";
-	font-size: 19px;
+  font-family: "Helvetica";
+	font-size: 15px;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 700;
- } */
+ } 
