@@ -25,7 +25,7 @@ body{
     }
     .top-header {
         padding: 0em 0em;
-        background: #f2f1f3;
+        background: #ff626a;
     }
     ul.top-nag {
         float:left
@@ -41,7 +41,7 @@ body{
         text-transform: uppercase;
        padding: 20px 20px;
         background: none;
-        background-color: #a75d82;
+        background-color: #f02a8d;
         display: inline-block;
     }
     ul.top-nag  a:hover,ul.top-nag  a.active{
@@ -57,7 +57,8 @@ body{
     }
     .top-nav{
            float: left;
-            background-color: rgb(102, 45, 45);
+           background-image: url(/assets/sidebar-5.jpg);
+           background-repeat:no-repeat;
             width: 15%;
              padding: 5em 1em 95.6em 1em;
                position:fixed;
@@ -71,13 +72,13 @@ body{
         margin-bottom:2em;        
     }
     .top-menu ul li a{
-        color: rgb(252, 253, 186);
+        color: rgb(235, 235, 151);
         font-size: 0.9em;
         font-weight: 600;
         text-transform: uppercase;
         padding: 5px;
         background: none;
-        background-color:rgb(109, 48, 48);
+        background-color:rgb(83, 46, 10);
         top: 20px;
     }        
 
@@ -92,10 +93,11 @@ body{
         display:block;
     }
     .logo  a h1{
-          color: rgb(252, 227, 227);
-        font-size: 2.5em;
+          color: rgb(255, 255, 255);
+        font-size: 3em;
         font-weight: 700;
         text-align: center;
+       padding-left: 3px;
     }
     .logo  a h1:hover{
      text-decoration:none;
@@ -130,3 +132,7 @@ body{
             text-decoration: underline;
            
         }
+        .col-md-3 top-nav{
+            background-image: url(/assets/sidebar-5.jpg);
+        }
+       

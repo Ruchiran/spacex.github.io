@@ -1,35 +1,36 @@
-<body>
-  <div class="col-md-3 top-nav">
-    <div class="logo">
-      <a [routerLink]="['/home']" [routerLinkActive]="['router-link-active']" >
-        <h1>SpaceX</h1>
-      </a>
-    </div>
-    <div class="top-menu">
-      <ul class="cl-effect-16">
-        <li>
-            <a [routerLink]="['/home']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="glyphicon glyphicon-home"></i>&nbsp;{{ 'Basic Data' }}
-          </a>
-        </li>
-        <li>
-            <a [routerLink]="['/vehicle']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="glyphicon glyphicon-plane"></i>&nbsp;{{ 'vehicle' }}
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/launchpad']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="glyphicon glyphicon-road"></i>&nbsp;{{ 'Launch pad' }}
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/launches']" [routerLinkActive]="['router-link-active']"  class="list-group-item">
-            <i class="glyphicon glyphicon-flag"></i>&nbsp;{{ 'Launches' }}
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
 
-</body>
+<body>
+    <div class="col-md-3 top-nav">
+      <div class="logo">
+        <a [routerLink]="['/home']" [routerLinkActive]="['router-link-active']" >
+          <h1>SpaceX</h1>
+        </a>
+      </div>
+      <div class="top-menu">
+        <ul class="cl-effect-16">
+          <li>
+              <a [routerLink]="['/home']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+              <i class="glyphicon glyphicon-home"></i>&nbsp;{{ 'Basic Data' }}
+            </a>
+          </li>
+          <li>
+              <a [routerLink]="['/vehicle']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+              <i class="glyphicon glyphicon-plane"></i>&nbsp;{{ 'vehicle' }}
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/launchpad']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+              <i class="glyphicon glyphicon-road"></i>&nbsp;{{ 'Launch pad' }}
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/launches']" [routerLinkActive]="['router-link-active']"  class="list-group-item">
+              <i class="glyphicon glyphicon-flag"></i>&nbsp;{{ 'Launches' }}
+            </a>
+          </li>
+      
+        </ul>
+      </div>
+    </div>
+  
+  </body>

@@ -1,118 +1,139 @@
 <app-sidebar></app-sidebar>
-<app-header></app-header>
+
 <body>
-  <div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            <h3>Basic Data</h3>
+  <br>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3>Basic Data</h3>
+        </div>
+      </div>
+      <div class="w3-container">
+
+        <div class="panel-body">
+          <div class="dataTable_wrapper">
+
+
+
+            <tbody>
+              <tr>
+                Name :
+                <td>
+                  {{info.name}} </td>
+              </tr>
+              <tr>
+                Founder
+                <td>
+                  {{info.founder}} </td>
+              </tr>
+              <tr>
+                Founded
+                <td>
+                  {{info.founded}} </td>
+              </tr>
+              <tr>
+                Employees:
+                <td>
+                  {{info.employees}} </td>
+              </tr>
+              <tr>
+
+                Summary :
+
+                <td>
+                  {{info.summary}}
+                </td>
+              </tr>
+            </tbody>
+            <br>
+            <br>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3>Latest launch information</h3>
+              </div>
+            </div>
+
+            <thead>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <img src='{{latest.links.mission_patch}}'> </td>
+              </tr>
+              <br>
+              <br>
+              <tr>
+                Flight Number :
+                <td>
+                  {{latest.flight_number}} </td>
+              </tr>
+              <tr>
+                Launched year
+                <td>
+                  {{latest.launch_year}} </td>
+              </tr>
+              <tr>
+                Rocket details:
+                <td>
+                  <a (click)="showRocket()">
+                    <b>Name : </b>{{latest.rocket.rocket_name}} </a>
+                </td>
+
+              </tr>
+              <tr>
+                <td></td>
+                <td *ngIf="showSelectedRocket">
+                  <b>Rocket ID : </b>{{latest.rocket.rocket_id}}
+                  <br>
+                  <b>Rocket Type : </b>{{latest.rocket.rocket_type}}</td>
+                <td></td>
+              </tr>
+              <tr>
+                Launch pad details:
+                <td>
+                  <a (click)="showsite()">
+                    <b>Site Name : </b>{{latest.launch_site.site_name}} </a>
+                </td>
+
+              </tr>
+              <tr>
+                <td></td>
+                <td *ngIf="showSelectedSite">
+                  <b>Site ID : </b>{{latest.launch_site.site_id}}
+                  <br>
+                  <b>Site full name : </b>{{latest.launch_site.site_name_long}}</td>
+                <td></td>
+                <tr>
+                  launch Date UTC :
+
+                  <td>
+                    {{latest.launch_date_utc}} </td>
+                </tr>
+                <tr>
+                  Details :
+                  <td>
+                    {{latest.details}} </td>
+                </tr>
+
+                <tr>
+
+                  <td>
+                  </td>
+                </tr>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </tbody>
+
           </div>
         </div>
-          <div class="panel-body">
-            <div class="dataTable_wrapper">
-              <table class="table table-striped table-bordered table-hover">
-               
 
-                <tbody>
-                  <tr>
-                    Name :
-                    <td>
-                     {{info.name}} </td>                    
-                  </tr>
-                  <tr>
-                   Founder
-                    <td>
-                      {{info.founder}} </td>                    
-                  </tr>
-                  <tr>
-                   Founded
-                    <td>
-                       {{info.founded}} </td>                    
-                  </tr>
-                  <tr>
-                   Employees:
-                    <td>
-                        {{info.employees}} </td>                    
-                  </tr>
-                  <tr>
-                    
-                      Summary :
-                   
-                    <td>
-                      {{info.summary}}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="panel panel-info">
-              <div class="panel-heading">
-              <h3>Latest launch information</h3>
-            </div>
-          </div>
-              <table class="table table-striped table-bordered table-hover">
-                <thead>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src='{{latest.links.mission_patch}}'> </td>                    
-                      </tr>
-                  <tr>
-                    Flight Number :
-                    <td>
-                     {{latest.flight_number}} </td>                    
-                  </tr>
-                  <tr>
-                    Launched year
-                    <td>
-                        {{latest.launch_year}} </td>                    
-                  </tr>
-                  <tr>
-                    Rocket details: 
-                    <td>
-                     <a (click)="showRocket()" ><b>Name : </b>{{latest.rocket.rocket_name}} </a> </td>
-                                 
-                  </tr>
-                  <tr>
-                    <td></td>    
-                    <td *ngIf="showSelectedRocket"><b>Rocket ID : </b>{{latest.rocket.rocket_id}} <br> <b>Rocket Type : </b>{{latest.rocket.rocket_type}}</td> 
-                    <td></td>    
-                   </tr>   
-                   <tr>
-                    Launch pad details:
-                    <td>
-                     <a (click)="showsite()" ><b>Site Name : </b>{{latest.launch_site.site_name}} </a> </td>
-                                 
-                  </tr>
-                  <tr>
-                    <td></td>    
-                    <td *ngIf="showSelectedSite"><b>Site ID : </b>{{latest.launch_site.site_id}} <br> <b>Site full name : </b>{{latest.launch_site.site_name_long}}</td> 
-                    <td></td>  
-                  <tr>
-                    launch Date UTC :
-                    
-                    <td>
-                        {{latest.launch_date_utc}} </td>                    
-                  </tr>
-                  <tr>
-                    Details :
-                    <td>
-                        {{latest.details}} </td>                    
-                  </tr>
-                 
-                  <tr>
-                   
-                    <td>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-       
       </div>
     </div>
   </div>
+
 </body>

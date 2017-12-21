@@ -6,14 +6,14 @@ body {
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-    background-color: rgb(240, 235, 235);
+    background-image: url(/assets/space3.jpg);
 }
   a{
-    color: rgb(0, 2, 128)
+    color: rgb(172, 172, 211)
   }
   a:hover {
       text-decoration: underline;
-      color: rgb(100, 111, 160);
+      color: rgb(10, 41, 177);
       cursor: pointer;
   }
   
@@ -187,7 +187,7 @@ body {
   
   .table-striped.dataTable tbody tr.active:nth-child(odd) td,
   .table-striped.dataTable tbody tr.active:nth-child(odd) th {
-  background-color: #017ebc;
+  background-color: #e2f2fa;
   }
   
   table.DTTT_selectable tbody tr {
@@ -212,7 +212,7 @@ body {
   
   ul.DTTT_dropdown.dropdown-menu li:hover a {
   background-color: #0088cc;
-  color: white !important;
+  color: rgba(255, 255, 255, 0) !important;
   }
   
   div.DTTT_collection_background {
@@ -233,7 +233,7 @@ body {
   padding: 10px 30px;
   opacity: 0.95;
   
-  background-color: white;
+  background-color: rgb(211, 34, 34);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   
@@ -339,7 +339,7 @@ body {
   height: 16px;
   width: 16px;
   display: block;
-  position: absolute;
+
   color: white;
   border: 2px solid white;
   border-radius: 16px;
@@ -395,9 +395,7 @@ body {
   table.dataTable tr.child {
   padding: 0.5em 1em;
   }
-  table.dataTable tr.child:hover {
-  background: transparent !important;
-  }
+  
   table.dataTable tr.child ul {
   display: inline-block;
   list-style-type: none;
@@ -444,7 +442,7 @@ body {
   .onoffswitch-inner:before {
   content: "ON";
   padding-left: 10px;
-  background-color: #34A7C1; color: #FFFFFF;
+  background-color: rgb(243, 250, 252); color: #FFFFFF;
   }
   .onoffswitch-inner:after {
   content: "OFF";
@@ -483,24 +481,34 @@ body {
   border: 2px solid white;
   outline: none;
   }
-  /* td{
+   td{
     font-family: Helvetica, sans-serif;
     font-variant: small-caps;
-    
+    font-size: large;
     padding-left: 20px;
+    color: rgba(238, 238, 238, 0.774)
   }
   tr{
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
+    color: #EEEEEE
   }
-  */
+ tbody{
+   background-color: #fafafa00
+ }
   
  h3{
   font-family: "Helvetica";
-	font-size: 15px;
+	font-size: 20px;
 	font-style: italic;
 	font-variant: normal;
-	font-weight: 700;
+  font-weight: 700;
+  color: rgb(236, 175, 175)
  } 
+ .panel-heading{
+background: #0d2c3acc;
+ }
